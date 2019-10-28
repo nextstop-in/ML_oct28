@@ -23,8 +23,16 @@ y_Pred=regressor.predict(X_Test)
 plt.scatter(X_train,y_train, color='red')
 plt.plot(X_train,regressor.predict(X_train),color='blue')
 plt.title('Salary vs Experience in ML(Training Set)')
-plt.xlabel('Salary')
-plt.ylabel('Experience')
+plt.xlabel('Experience')
+plt.ylabel('Salary')
+plt.show()
+
+#Visualising the test set
+plt.scatter(X_Test,y_test, color='red')
+plt.plot(X_train,regressor.predict(X_train),color='blue')
+plt.title('Salary vs Experience in ML(Test Set)')
+plt.xlabel('Experience')
+plt.ylabel('Salary')
 plt.show()
 
 
